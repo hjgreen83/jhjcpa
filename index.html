@@ -89,8 +89,8 @@
   .tag-ex{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:#8a6a1f;background:#FBE9B8;padding:2px 8px;border-radius:999px;vertical-align:middle;}
 
   /* about */
-  .about{display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:start;}
-  .photo{aspect-ratio:4/5;border-radius:18px;background:var(--bg);border:2px dashed #cfd4dc;display:flex;align-items:center;justify-content:center;color:#9aa0ac;font-size:14px;text-align:center;padding:20px;}
+  .about{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start;}
+  .photo{display:block;width:100%;aspect-ratio:382/440;object-fit:cover;object-position:top;border-radius:18px;box-shadow:0 10px 26px rgba(20,30,60,.14);}
   .about h3{margin:0;font-size:26px;font-weight:800;}
   .about .role{margin:6px 0 20px;color:var(--muted);font-weight:600;}
   .about .quote{border-left:4px solid var(--gold);padding:4px 0 4px 16px;font-size:18px;font-weight:700;margin:0 0 22px;}
@@ -137,7 +137,7 @@
     .hero{padding:64px 20px 72px;}
     .hero-doc{display:none;}
     .about{grid-template-columns:1fr;}
-    .photo{max-width:240px;aspect-ratio:1;margin:0 auto;}
+    .photo{max-width:240px;margin:0 auto;}
     .svc-grid{grid-template-columns:1fr 1fr;}
     .contact-grid{grid-template-columns:1fr;}
     .sec{padding:60px 0;}
@@ -226,7 +226,7 @@
       <h2>회사소개</h2>
     </div>
     <div class="about">
-      <div class="photo">대표 회계사 사진<br>(추후 삽입)</div>
+      <img class="photo" src="profile.png" alt="장현정 공인회계사·세무사">
       <div>
         <h3>장현정</h3>
         <p class="role">공인회계사 · 세무사 | 신정회계법인</p>
