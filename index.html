@@ -94,7 +94,18 @@
   .about h3{margin:0;font-size:26px;font-weight:800;}
   .about .role{margin:6px 0 20px;color:var(--muted);font-weight:600;}
   .about .quote{border-left:4px solid var(--gold);padding:4px 0 4px 16px;font-size:18px;font-weight:700;margin:0 0 22px;}
-  .about .todo+.todo{margin-top:22px;}
+  .cred-title{margin:26px 0 12px;font-size:14px;font-weight:700;color:var(--muted);letter-spacing:2px;}
+  .cred-title:first-of-type{margin-top:0;}
+  .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px;}
+  .chips li{border:1.5px solid var(--gold-2);color:#8a5d12;background:#FFF9EA;border-radius:999px;padding:8px 18px;font-weight:700;font-size:15px;}
+  .dots{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .dots li{position:relative;padding-left:20px;font-size:16px;font-weight:500;}
+  .dots li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--gold);}
+  .career{list-style:none;margin:0;padding:0;display:grid;gap:10px;max-width:520px;}
+  .career li{display:flex;align-items:center;gap:14px;background:var(--bg);border-radius:12px;padding:14px 18px;font-size:16.5px;}
+  .career li span{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:#dfe3ea;color:#5b6477;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;}
+  .career li span.now{background:var(--gold);color:#fff;}
+  .career li b{font-weight:700;}
 
   /* services */
   .svc-grid.cols4 .svc{flex-basis:calc((100% - 54px)/4);padding:26px 20px 20px;}
@@ -260,8 +271,25 @@
         <h3>장현정</h3>
         <p class="role">공인회계사 · 세무사 | 신정회계법인</p>
         <p class="quote">사업주가 사업에만 전념할 수 있도록!</p>
-        <div class="todo">대표 회계사 소개글을 작성해 주세요. (경력, 전문 분야, 상담 철학 등)</div>
-        <div class="todo">약력·자격 사항을 작성해 주세요.</div>
+        <h4 class="cred-title">경력</h4>
+        <ul class="career" aria-label="경력">
+          <li><span class="now">현</span><b>신정회계법인</b> 파트너</li>
+          <li><span>전</span><b>유진자산운용(주)</b></li>
+          <li><span>전</span><b>삼일회계법인</b></li>
+        </ul>
+        <h4 class="cred-title">자격사항</h4>
+        <ul class="chips" aria-label="자격사항">
+          <li>공인회계사</li>
+          <li>세무사</li>
+          <li>투자자산운용사</li>
+        </ul>
+        <h4 class="cred-title">위원 활동</h4>
+        <ul class="dots" aria-label="위원 활동">
+          <li>인천시 투자유치기획위원</li>
+          <li>인천교통공사 재산심의위원</li>
+          <li>인천광역시 지방세심의위원회 위원</li>
+          <li>연수구 지방세심의위원회 위원</li>
+        </ul>
       </div>
     </div>
   </div>
