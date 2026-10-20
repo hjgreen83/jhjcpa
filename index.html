@@ -120,13 +120,6 @@
   .svc a{font-size:13.5px;font-weight:700;color:var(--navy-3);}
   .svc a:hover{text-decoration:underline;}
 
-  .flow{margin-top:52px;}
-  .flow-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:none;}
-  .flow-list li{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 20px 22px;box-shadow:0 6px 18px rgba(20,30,60,.05);}
-  .flow-list li:not(:last-child)::after{content:"›";position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:26px;color:#c3c8d2;z-index:1;}
-  .flow-list b{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#fff;align-items:center;justify-content:center;font-size:14px;margin-bottom:12px;}
-  .flow-list h4{margin:0 0 6px;font-size:16.5px;font-weight:700;}
-  .flow-list p{margin:0;font-size:14px;color:#5b6477;}
 
   .svc-cta{margin-top:48px;background:linear-gradient(160deg,var(--navy),var(--navy-3));border-radius:20px;color:#fff;padding:34px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .svc-cta h3{margin:0;font-size:21px;font-weight:800;}
@@ -174,8 +167,6 @@
     .about{grid-template-columns:1fr;}
     .photo{max-width:240px;margin:0 auto;}
     .svc,.svc-grid.cols4 .svc{flex-basis:calc((100% - 18px)/2);}
-    .flow-list{grid-template-columns:1fr 1fr;}
-    .flow-list li:not(:last-child)::after{display:none;}
     .svc-cta{padding:28px 24px;}
     .contact-grid{grid-template-columns:1fr;}
     .sec{padding:60px 0;}
@@ -186,7 +177,6 @@
   }
   @media (max-width:560px){
     .svc,.svc-grid.cols4 .svc{flex-basis:100%;}
-    .flow-list{grid-template-columns:1fr;}
     .svc-group-title{font-size:19px;}
     .logo-kor{font-size:19px;} .logo-firm{font-size:14px;}
     .footer .sep{display:block;height:0;visibility:hidden;}
@@ -388,16 +378,6 @@
           <a href="#contact">상담 문의 ＞</a>
         </article>
       </div>
-    </div>
-
-    <div class="flow">
-      <h3 class="svc-group-title"><span>04</span>진행 절차</h3>
-      <ol class="flow-list">
-        <li><b>1</b><h4>상담 문의</h4><p>전화나 이메일로 필요한 업무를 알려주세요.</p></li>
-        <li><b>2</b><h4>업무 범위 확정</h4><p>업무 범위와 일정, 수임 조건을 안내해 드립니다.</p></li>
-        <li><b>3</b><h4>자료 검토·업무 수행</h4><p>필요한 자료를 확인하고 업무를 진행합니다.</p></li>
-        <li><b>4</b><h4>결과 보고</h4><p>진행 결과를 정리해서 보고드립니다.</p></li>
-      </ol>
     </div>
 
     <div class="svc-cta">
